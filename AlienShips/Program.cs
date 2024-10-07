@@ -41,10 +41,10 @@ namespace AlienShips
 
             for (int i = 0;i < ship.Length;i++)
             {
-                if (ship[i].getHP() == HP){
-                    if (ship[i].getspeed() == speed)
+                if (ship[i].getHP() >= HP){
+                    if (ship[i].getspeed() >= speed)
                     {
-                        if (ship[i].getdamage() == damage)
+                        if (ship[i].getdamage() >= damage)
                         {
                             if (ship[i].getisfriendly() == isfriendly){
                                 return ship[i].getname();
